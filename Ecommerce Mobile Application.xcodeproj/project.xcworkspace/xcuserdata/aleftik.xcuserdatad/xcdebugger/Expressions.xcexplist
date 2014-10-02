@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[DetailViewController setDetailItem:]:DetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "newDetailItem keyPath">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MasterViewController tableView:didSelectRowAtIndexPath:]:MasterViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.detailViewController.detailItem">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MasterViewController configureCell:atIndexPath:]:MasterViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[object valueForKey:@&quot;imageData&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
