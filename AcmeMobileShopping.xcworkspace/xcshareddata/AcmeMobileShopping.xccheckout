@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>71E13127-493E-4C3E-BFA5-5445AAD77484</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AcmeMobileShopping</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3244D9E22585B5E6AD35D3BAA9A756655454A233</key>
+		<string>ssh://gerrit.corp.appdynamics.com:29418/pm-demo-apps.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AcmeMobileShopping/AcmeMobileShopping.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3244D9E22585B5E6AD35D3BAA9A756655454A233</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://gerrit.corp.appdynamics.com:29418/pm-demo-apps.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3244D9E22585B5E6AD35D3BAA9A756655454A233</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3244D9E22585B5E6AD35D3BAA9A756655454A233</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pm-demo-apps</string>
+		</dict>
+	</array>
+</dict>
+</plist>
