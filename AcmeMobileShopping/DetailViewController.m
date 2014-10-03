@@ -88,6 +88,7 @@
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSLog(@"Session id to:%@", appDelegate.session.sessionId);
     [request setValue:appDelegate.session.sessionId forHTTPHeaderField:@"JSESSIONID"];
+    [request setValue:@"true" forHTTPHeaderField:@"appdynamicssnapshotenabled"];
     NSURLConnection *theURL = [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:TRUE];
 
     

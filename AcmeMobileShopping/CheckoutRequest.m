@@ -25,9 +25,7 @@
     NSString *checkoutUrl = [appDelegate.url stringByAppendingString:@"rest/cart/co/"];
     
     NSURL *url = [NSURL URLWithString:checkoutUrl];
-    NSLog(@"URL is :%@ ", checkoutUrl);
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
-    NSLog(@"Session id for checkout %@", appDelegate.session.sessionId);
     [request setValue:appDelegate.session.sessionId forHTTPHeaderField:@"JSESSIONID"];
     [request setValue:@"true" forHTTPHeaderField:@"appdynamicssnapshotenabled"];
     NSURLResponse *response = nil;
