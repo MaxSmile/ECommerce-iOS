@@ -8,33 +8,62 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <KIF/KIFTestCase.h>
+#import <KIF/KIF.h>
+//#import "KIFUITestActor+EXAdditions.h"
 
 @interface AddToCartTestCase : KIFTestCase
 
 @end
 
 @implementation AddToCartTestCase
+static const NSString *kTitles[] = { @"The Tourist", @"The Lost City Of Z", @"The Goldfinch: A Novel", @"The Godfather", @"Shantaram", @"Sacred Hoops", @"Personal", @"Freakonomics", @"Farewell To Arms",@"Driven From Within",@"A Clockwork Orange"};
+static const int kRandomCrash = 45;
+static const int CRASH_INTERVAL = 100;
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+    [tester tapViewWithAccessibilityLabel:@"Refresh"];
+    int maxBooks =arc4random() % sizeof kTitles/sizeof (kTitles[0]);
+    int randomCrash =arc4random() % CRASH_INTERVAL;
+    if (randomCrash!=kRandomCrash) {
+    for (int i=0; i<maxBooks;i++) {
+        [self addToCart:kTitles[arc4random()%maxBooks]];
+    }
+    } else {
+        [self crashTheApp];
+    }
+
+    [tester waitForViewWithAccessibilityLabel:@"CheckoutButton"];
+    [tester tapViewWithAccessibilityLabel:@"CheckoutButton"];
+    [tester waitForViewWithAccessibilityLabel:@"OK"];
+    [tester tapViewWithAccessibilityLabel:@"OK"];
+    [tester tapViewWithAccessibilityLabel:@"Best Sellers"];
+    [tester tapViewWithAccessibilityLabel:@"Best Sellers"];
+    [tester tapViewWithAccessibilityLabel:@"Refresh"];
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void) addToCart:(NSString *) title {
+    [tester tapViewWithAccessibilityLabel:@"Best Sellers"];
+    [tester tapViewWithAccessibilityLabel:@"Best Sellers"];
+    [tester waitForViewWithAccessibilityLabel:title];
+    [tester tapViewWithAccessibilityLabel:title];
+    [tester waitForViewWithAccessibilityLabel:@"Add To Cart"];
+    [tester tapViewWithAccessibilityLabel:@"Add To Cart"];
+
 }
+-(void) crashTheApp {
+    [tester tapViewWithAccessibilityLabel:@"Settings"];
+    [tester tapViewWithAccessibilityLabel:@"CrashMe"];
+}
+
+
 
 @end
