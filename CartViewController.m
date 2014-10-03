@@ -38,6 +38,7 @@
     
     self.checkoutButton = [[UIBarButtonItem alloc] initWithTitle:@"Checkout" style:UIBarButtonSystemItemAdd target:self action:@selector(checkout:)];
     self.navigationItem.rightBarButtonItem = self.checkoutButton;
+    [self.navigationItem.rightBarButtonItem setAccessibilityLabel:@"CheckoutButton"];
 }
 
 
@@ -118,6 +119,8 @@
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
+//    [alert setAccessibilityLabel:@"CheckoutDialog"];
+//    [alert set]
     [alert show];
     [self clearCart:@"CartItem"];
     

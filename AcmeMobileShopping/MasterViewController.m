@@ -29,6 +29,7 @@ BookListParser *parser;
         self.title = NSLocalizedString(@"Best Sellers", @"Best Sellers");
         self.tabBarItem.image = [UIImage imageNamed:@"home.png"];
         self.tabBarController.title = @"Home";
+        [self setAccessibilityLabel:@"Table View"];
     }
     
     return self;
@@ -41,6 +42,7 @@ BookListParser *parser;
 	// Do any additional setup after loading the view, typically from a nib.
     //self.navigationItem.leftBarButtonItem = self.editButtonItem;
     UIBarButtonItem *refreshButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshTable)];
+    [refreshButton setAccessibilityLabel:@"Refresh"];
     self.navigationItem.rightBarButtonItem = refreshButton;
     
     activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
@@ -315,6 +317,8 @@ BookListParser *parser;
 {
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [[object valueForKey:@"title"] description];
+    [cell setAccessibilityLabel:[[object valueForKey:@"title"] description]];
+
     //cell.imageView.image = [object valueForKey:@"imageData"];
 }
 

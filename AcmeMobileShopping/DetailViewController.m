@@ -44,10 +44,10 @@
         UIImage *image = [[UIImage alloc] initWithData:[self.detailItem valueForKey:@"imageData"]];
         self.imageView.image = image;
         
-        
-        
         self.addButton = [[UIBarButtonItem alloc] initWithTitle:@"Add to Cart" style:UIBarButtonSystemItemAdd target:self action:@selector(addToCart:)];
         self.navigationItem.rightBarButtonItem = self.addButton;
+        
+        [self.navigationItem.rightBarButtonItem setAccessibilityLabel:@"Add To Cart"];
         NSNumberFormatter * formatter = [[NSNumberFormatter alloc] init];
         [formatter setNumberStyle: NSNumberFormatterCurrencyStyle];
         
@@ -176,6 +176,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Item Details", @"Item Details");
+        
     }
     [self configureView];
     return self;

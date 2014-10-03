@@ -64,6 +64,7 @@
     MasterViewController *masterViewController = [[MasterViewController alloc] initWithNibName:@"MasterViewController" bundle:nil];
     masterViewController.managedObjectContext = self.managedObjectContext;
     masterViewController.window = self.window;
+
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
     
@@ -75,6 +76,9 @@
     SettingsViewController *settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
     UINavigationController *settingsNavigationController = [[UINavigationController alloc] initWithRootViewController:settingsViewController];
     _tabBarController = [[UITabBarController alloc] init];
+    [_tabBarController setAccessibilityLabel:@"TabBar"];
+    [navigationController setAccessibilityLabel:@"Best Sellers"];
+    [settingsNavigationController setAccessibilityLabel:@"Settings"];
     _tabBarController.viewControllers = @[navigationController,cartNavigationController,settingsNavigationController];
     _window.rootViewController = self.tabBarController;
     [self saveContext];
