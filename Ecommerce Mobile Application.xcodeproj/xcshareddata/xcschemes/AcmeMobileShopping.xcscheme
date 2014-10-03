@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Ecommerce Mobile Application.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "50BA3DD019DDDEF100A3ADA4"
+               BuildableName = "UI Tests.xctest"
+               BlueprintName = "UI Tests"
+               ReferencedContainer = "container:Ecommerce Mobile Application.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,6 +42,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "50BA3DD019DDDEF100A3ADA4"
+               BuildableName = "UI Tests.xctest"
+               BlueprintName = "UI Tests"
+               ReferencedContainer = "container:Ecommerce Mobile Application.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
