@@ -12,5 +12,18 @@ Pre-Requisites
 Importing the Project
 ---------------------
 1. Clone a local copy of this project with `git clone https://github.com/Appdynamics/ECommerce-iOS`
-2. Open Xcode and select File -> Open and select Acme Mobile Shopping
-3. Add the CocoaPods project ("Add Files to Ecommerce Mobile Application" and select the "Pods" folder)
+2. Open Xcode, File -> Open and select "Acme Mobile Shopping". This will add the "Ecommerce Mobile Application" project.
+3. Add the CocoaPods project ("Add Files to Ecommerce Mobile Application" and select "Pods")
+
+Running with the iOS Simulator
+------------------------------
+1. Select an appropriate simulator target, e.g. iPhone 5s (8.0)
+2. To run the application manually: select Product -> Run
+3. To run the automated test simulation: select Product -> Test
+
+Running with your own iOS Device
+--------------------------------
+1. For both targets ('Ecommerce Mobile Application' and 'UI Tests'), under Build Settings -> Code Signing set Code Signing Identity to use your iPhone Developer identity from the Keychain and set Provisioning Profile to 'Automatic'
+2. If running on an older, pre-iOS 8.0 device: for the 'Ecommerce Mobile Application' target, under General -> Deployment Info set Deployment Target to the iOS version for your device and set Devices to 'Universal'
+3. To run the application manually: select Product -> Run
+4. To run the automated test simulation: select Product -> Test
