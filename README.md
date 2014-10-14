@@ -12,7 +12,7 @@ Pre-Requisites
 Importing the Project
 ---------------------
 1. Clone a local copy of this project with `git clone https://github.com/Appdynamics/ECommerce-iOS`
-2. Open Xcode, File -> Open and select "Acme Mobile Shopping". This will add the "Ecommerce Mobile Application" project.
+2. Open Xcode, File -> Open and select "Acme Mobile Shopping".
 3. Add the CocoaPods project ("Add Files to Ecommerce Mobile Application" and select "Pods")
 
 Running with the iOS Simulator
