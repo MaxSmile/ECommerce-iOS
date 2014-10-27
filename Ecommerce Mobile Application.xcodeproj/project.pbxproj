@@ -637,8 +637,8 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "Ecommerce Mobile Application";
-				PROVISIONING_PROFILE = "b15e3615-ac84-4b69-9e4c-5eb06dd673f0";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "b15e3615-ac84-4b69-9e4c-5eb06dd673f0";
+				PROVISIONING_PROFILE = "a920d2e3-80f6-47e4-ab19-8a3fc0c3acbf";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "a920d2e3-80f6-47e4-ab19-8a3fc0c3acbf";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -672,8 +672,8 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "Ecommerce Mobile Application";
-				PROVISIONING_PROFILE = "b15e3615-ac84-4b69-9e4c-5eb06dd673f0";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "b15e3615-ac84-4b69-9e4c-5eb06dd673f0";
+				PROVISIONING_PROFILE = "a920d2e3-80f6-47e4-ab19-8a3fc0c3acbf";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "a920d2e3-80f6-47e4-ab19-8a3fc0c3acbf";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
