@@ -174,6 +174,7 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
+    [ADEumInstrumentation leaveBreadcrumb:@"Detailed Item View"];
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Item Details", @"Item Details");

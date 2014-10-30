@@ -27,7 +27,7 @@
  * @param collectorUrl The URL of the collector. The SDK will send beacons to this collector.
  *
  * @warning `appKey` must not be `nil`.
- * @warnign `collectorUrl` must not be `nil`.
+ * @warning `collectorUrl` must not be `nil`.
  */
 + (void)initWithKey:(NSString *)appKey collectorUrl:(NSString *)collectorUrl;
 
@@ -133,6 +133,24 @@
  * @warning `name` may not be `nil` or the empty string, and must consist only of alphanumeric characters.
  */
 + (void)reportMetricWithName:(NSString*)name value:(int64_t)value;
+
+
+///---------------------
+/// @name Breadcrumbs tracking for crash reports
+///---------------------
+
+/**
+ * Records the value of breadcrumb and assigns it a current timestamp.
+ *
+ * Call this when something interesting happens in your application. If your
+ * application crashes at some point in the future, the breadcrumb will
+ * be included in the crash report, to help you understand the problem.
+ *
+ * @param breadcrumb The value of breadcrumb.
+ *
+ * @warning Only non `nil` and non the empty string will be recorded. Breadcrumb will be truncated if longer than 2048 characters.
+ */
++ (void)leaveBreadcrumb:(NSString*)breadcrumb;
 
 
 // Undocumented methods, useful for debugging. These are subject to change in future releases.

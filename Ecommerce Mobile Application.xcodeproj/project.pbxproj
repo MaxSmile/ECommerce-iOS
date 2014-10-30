@@ -10,7 +10,7 @@
 		500D053F177CEAD200EDBFE4 /* ItemImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 500D053E177CEAD200EDBFE4 /* ItemImageRequest.m */; };
 		500D0541177D12AD00EDBFE4 /* shopping-cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 500D0540177D12AD00EDBFE4 /* shopping-cart.png */; };
 		500D0543177D12E500EDBFE4 /* AccountInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 500D0542177D12E500EDBFE4 /* AccountInfo.xib */; };
-		5031A02219DCF05000AD0C59 /* ADEUMInstrumentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5031A02119DCF05000AD0C59 /* ADEUMInstrumentation.framework */; };
+		501E3D8D1A02B79100475AE9 /* ADEUMInstrumentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501E3D8C1A02B79100475AE9 /* ADEUMInstrumentation.framework */; };
 		50359E9B19C6875C00C58954 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50359E9A19C6875C00C58954 /* Images.xcassets */; };
 		5036052419DDF559006BE083 /* libPods-UI Tests-KIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5036052319DDF559006BE083 /* libPods-UI Tests-KIF.a */; };
 		5036052519DDF571006BE083 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503FE44517788EC200A31357 /* CoreGraphics.framework */; };
@@ -77,7 +77,7 @@
 		500D053E177CEAD200EDBFE4 /* ItemImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemImageRequest.m; sourceTree = "<group>"; };
 		500D0540177D12AD00EDBFE4 /* shopping-cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shopping-cart.png"; sourceTree = "<group>"; };
 		500D0542177D12E500EDBFE4 /* AccountInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountInfo.xib; sourceTree = "<group>"; };
-		5031A02119DCF05000AD0C59 /* ADEUMInstrumentation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ADEUMInstrumentation.framework; sourceTree = "<group>"; };
+		501E3D8C1A02B79100475AE9 /* ADEUMInstrumentation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ADEUMInstrumentation.framework; sourceTree = "<group>"; };
 		50359E9A19C6875C00C58954 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5036052319DDF559006BE083 /* libPods-UI Tests-KIF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-UI Tests-KIF.a"; path = "Pods/build/Debug-iphoneos/libPods-UI Tests-KIF.a"; sourceTree = "<group>"; };
 		5036052619DDF6BC006BE083 /* AddToCartTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToCartTestCase.m; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 				50E760931793175D00CC0D65 /* SystemConfiguration.framework in Frameworks */,
 				5075025C1778F90F00746A59 /* CoreData.framework in Frameworks */,
 				503FE44217788EC200A31357 /* UIKit.framework in Frameworks */,
-				5031A02219DCF05000AD0C59 /* ADEUMInstrumentation.framework in Frameworks */,
+				501E3D8D1A02B79100475AE9 /* ADEUMInstrumentation.framework in Frameworks */,
 				503FE44417788EC200A31357 /* Foundation.framework in Frameworks */,
 				503FE44617788EC200A31357 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -186,8 +186,8 @@
 		503FE44017788EC200A31357 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				501E3D8C1A02B79100475AE9 /* ADEUMInstrumentation.framework */,
 				5036052319DDF559006BE083 /* libPods-UI Tests-KIF.a */,
-				5031A02119DCF05000AD0C59 /* ADEUMInstrumentation.framework */,
 				507B0E3F17D7F8FE00BB5EA5 /* CoreTelephony.framework */,
 				507B0E3917D7F6B600BB5EA5 /* libz.dylib */,
 				5056301A17B159DC0003BDE0 /* libsqlite3.dylib */,

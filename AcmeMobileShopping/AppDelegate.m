@@ -87,6 +87,7 @@
     NSString *userurl = [_url stringByAppendingString:@"rest/user"];
     self.session = [[ShoppingCartSession alloc] initWithURLString:userurl];
     [ADEumInstrumentation stopTimerWithName:@"startDidFinishLaunchingWithOptions"];
+    [ADEumInstrumentation leaveBreadcrumb:@"App Launched"];
     return YES;
 
 }

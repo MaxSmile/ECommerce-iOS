@@ -9,6 +9,7 @@
 #import "CartViewController.h"
 #import "AppDelegate.h"
 #import "CheckoutRequest.h"
+#import <ADEUMInstrumentation/ADEUMInstrumentation.h>
 
 @interface CartViewController()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -20,6 +21,7 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
+    [ADEumInstrumentation leaveBreadcrumb:@"Cart Item View"];
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Shopping Cart", @"Shopping Cart");

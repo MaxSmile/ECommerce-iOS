@@ -24,6 +24,7 @@ BookListParser *parser;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
+    [ADEumInstrumentation leaveBreadcrumb:@"Item List View"];
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Best Sellers", @"Best Sellers");
