@@ -618,8 +618,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: AppDynamics Inc. (CGE964ZX4K)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: AppDynamics Inc. (CGE964ZX4K)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Val C (5H657463MR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Val C (5H657463MR)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -637,8 +637,8 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "Ecommerce Mobile Application";
-				PROVISIONING_PROFILE = "a920d2e3-80f6-47e4-ab19-8a3fc0c3acbf";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "a920d2e3-80f6-47e4-ab19-8a3fc0c3acbf";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -653,8 +653,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: AppDynamics Inc. (CGE964ZX4K)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: AppDynamics Inc. (CGE964ZX4K)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Val C (5H657463MR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Val C (5H657463MR)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -672,8 +672,8 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "Ecommerce Mobile Application";
-				PROVISIONING_PROFILE = "a920d2e3-80f6-47e4-ab19-8a3fc0c3acbf";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "a920d2e3-80f6-47e4-ab19-8a3fc0c3acbf";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
