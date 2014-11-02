@@ -10,7 +10,6 @@
 		500D053F177CEAD200EDBFE4 /* ItemImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 500D053E177CEAD200EDBFE4 /* ItemImageRequest.m */; };
 		500D0541177D12AD00EDBFE4 /* shopping-cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 500D0540177D12AD00EDBFE4 /* shopping-cart.png */; };
 		500D0543177D12E500EDBFE4 /* AccountInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 500D0542177D12E500EDBFE4 /* AccountInfo.xib */; };
-		501E3D8D1A02B79100475AE9 /* ADEUMInstrumentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501E3D8C1A02B79100475AE9 /* ADEUMInstrumentation.framework */; };
 		50359E9B19C6875C00C58954 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50359E9A19C6875C00C58954 /* Images.xcassets */; };
 		5036052419DDF559006BE083 /* libPods-UI Tests-KIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5036052319DDF559006BE083 /* libPods-UI Tests-KIF.a */; };
 		5036052519DDF571006BE083 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503FE44517788EC200A31357 /* CoreGraphics.framework */; };
@@ -32,6 +31,7 @@
 		504249AF178382A50071492D /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 504249AE178382A50071492D /* CartViewController.m */; };
 		504249B1178382EB0071492D /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504249B0178382EB0071492D /* CartViewController.xib */; };
 		504249B31783887B0071492D /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 504249B21783887B0071492D /* home.png */; };
+		504487E01A059A3C0054FF58 /* ADEUMInstrumentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504487DF1A059A3C0054FF58 /* ADEUMInstrumentation.framework */; };
 		5056301B17B159DC0003BDE0 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5056301A17B159DC0003BDE0 /* libsqlite3.dylib */; };
 		505E45511781C7D100C6C79E /* ShoppingCartSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 505E45501781C7D100C6C79E /* ShoppingCartSession.m */; };
 		5075025C1778F90F00746A59 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5075025B1778F90F00746A59 /* CoreData.framework */; };
@@ -77,7 +77,6 @@
 		500D053E177CEAD200EDBFE4 /* ItemImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemImageRequest.m; sourceTree = "<group>"; };
 		500D0540177D12AD00EDBFE4 /* shopping-cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shopping-cart.png"; sourceTree = "<group>"; };
 		500D0542177D12E500EDBFE4 /* AccountInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountInfo.xib; sourceTree = "<group>"; };
-		501E3D8C1A02B79100475AE9 /* ADEUMInstrumentation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ADEUMInstrumentation.framework; sourceTree = "<group>"; };
 		50359E9A19C6875C00C58954 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5036052319DDF559006BE083 /* libPods-UI Tests-KIF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-UI Tests-KIF.a"; path = "Pods/build/Debug-iphoneos/libPods-UI Tests-KIF.a"; sourceTree = "<group>"; };
 		5036052619DDF6BC006BE083 /* AddToCartTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToCartTestCase.m; sourceTree = "<group>"; };
@@ -111,6 +110,7 @@
 		504249AE178382A50071492D /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CartViewController.m; path = ../CartViewController.m; sourceTree = "<group>"; };
 		504249B0178382EB0071492D /* CartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
 		504249B21783887B0071492D /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		504487DF1A059A3C0054FF58 /* ADEUMInstrumentation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ADEUMInstrumentation.framework; sourceTree = "<group>"; };
 		5056301A17B159DC0003BDE0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		505E454F1781C7D100C6C79E /* ShoppingCartSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartSession.h; sourceTree = "<group>"; };
 		505E45501781C7D100C6C79E /* ShoppingCartSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartSession.m; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 				50E760931793175D00CC0D65 /* SystemConfiguration.framework in Frameworks */,
 				5075025C1778F90F00746A59 /* CoreData.framework in Frameworks */,
 				503FE44217788EC200A31357 /* UIKit.framework in Frameworks */,
-				501E3D8D1A02B79100475AE9 /* ADEUMInstrumentation.framework in Frameworks */,
+				504487E01A059A3C0054FF58 /* ADEUMInstrumentation.framework in Frameworks */,
 				503FE44417788EC200A31357 /* Foundation.framework in Frameworks */,
 				503FE44617788EC200A31357 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -186,7 +186,7 @@
 		503FE44017788EC200A31357 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				501E3D8C1A02B79100475AE9 /* ADEUMInstrumentation.framework */,
+				504487DF1A059A3C0054FF58 /* ADEUMInstrumentation.framework */,
 				5036052319DDF559006BE083 /* libPods-UI Tests-KIF.a */,
 				507B0E3F17D7F8FE00BB5EA5 /* CoreTelephony.framework */,
 				507B0E3917D7F6B600BB5EA5 /* libz.dylib */,
@@ -618,8 +618,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Val C (5H657463MR)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Val C (5H657463MR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -653,8 +653,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Val C (5H657463MR)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Val C (5H657463MR)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
