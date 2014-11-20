@@ -72,7 +72,7 @@
 			<key>Key</key>
 			<string>collectorUrl</string>
 			<key>DefaultValue</key>
-			<string>http://pm-demo.appdynamics.com</string>
+			<string>http://ec2-54-202-222-83.us-west-2.compute.amazonaws.com</string>
 			<key>KeyboardType</key>
 			<string>URL</string>
 		</dict>
@@ -84,7 +84,7 @@
 			<key>Key</key>
 			<string>appKey</string>
 			<key>DefaultValue</key>
-			<string>EUM-AAB-AUA</string>
+			<string>pm-cloud-AAB-AUM</string>
 		</dict>
 	</array>
 	<key>StringsTable</key>
