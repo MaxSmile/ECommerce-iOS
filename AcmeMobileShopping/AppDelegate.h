@@ -29,4 +29,5 @@
     extern  NSString * const kUrl;
     extern  NSString * const kAppKey;
     extern  NSString * const kCollectorUrl;
+- (void)  relogin;
 @end

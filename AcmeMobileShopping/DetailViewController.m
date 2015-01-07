@@ -54,7 +54,6 @@
         NSDecimalNumber *priceDecimal = (NSDecimalNumber *)[self.detailItem valueForKey:@"price"];
         NSString *currencyLabel = @"Buy New";
         self.priceLabel.text = [currencyLabel stringByAppendingString:[formatter stringFromNumber: priceDecimal]];
-        //self.priceLabel.text = [[self.detailItem valueForKey:@"price"] description];
     }
 }
 
@@ -88,6 +87,8 @@
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     NSLog(@"Session id to:%@", appDelegate.session.sessionId);
     [request setValue:appDelegate.session.sessionId forHTTPHeaderField:@"JSESSIONID"];
+    [request setValue:appDelegate.username forHTTPHeaderField:@"USERNAME"];
+    [request setValue:appDelegate.session.routeId forHTTPHeaderField:@"ROUTEID"];
     [request setValue:@"true" forHTTPHeaderField:@"appdynamicssnapshotenabled"];
     NSURLConnection *theURL = [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:TRUE];
 
@@ -118,21 +119,19 @@
     int code = [httpResponse statusCode];
     NSDictionary *responseHeaders = [httpResponse allHeaderFields];
     if (code == 204) {
-        
-    
-    NSString *cartSize = [responseHeaders valueForKey:@"cart-size"];
-    NSLog(@"Cart size %@", cartSize);
+        NSString *cartSize = [responseHeaders valueForKey:@"cart-size"];
+        NSLog(@"Cart size %@", cartSize);
     
 
-    [ADEumInstrumentation reportMetricWithName:@"CartSize" value:[cartSize intValue]];
-    NSLog(@"Response code %d", code);
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    UITabBarController *barController = appDelegate.tabBarController;
-    NSArray *controllers = [barController viewControllers];
-    NSLog(@"Num of Controllers %d ", [controllers count]);
-    [self insertNewObject];
-    UINavigationController *cartViewController = [controllers objectAtIndex:1];
-    barController.selectedViewController=cartViewController;
+        [ADEumInstrumentation reportMetricWithName:@"CartSize" value:[cartSize intValue]];
+        NSLog(@"Response code %d", code);
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        UITabBarController *barController = appDelegate.tabBarController;
+        NSArray *controllers = [barController viewControllers];
+        NSLog(@"Num of Controllers %d ", [controllers count]);
+        [self insertNewObject];
+        UINavigationController *cartViewController = [controllers objectAtIndex:1];
+        barController.selectedViewController=cartViewController;
     } else {
          NSLog(@"Response code %d", code);
     }

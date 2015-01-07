@@ -147,7 +147,7 @@
 }
 
  -(void) initInstrumentation {
-    [ADEumInstrumentation initWithKey:_appKey collectorUrl:_collectorUrl enableLogging:false];
+    [ADEumInstrumentation initWithKey:_appKey collectorUrl:_collectorUrl enableLogging:NO];
 }
 
 -(void) loadShoppingCartFromDisk {
@@ -400,6 +400,12 @@
 void HandleExceptions(NSException *exception) {
     NSLog(@"The app has encountered an unhandled exception: %@", [exception debugDescription]);
     // Save application data on crash
+}
+
+-(void) relogin {
+    NSLog(@"******** LOGGING IN ******");
+    self.session = [[ShoppingCartSession alloc] initWithURLString:_url];
+    NSLog(@"******** NEW'Ed a SESSION  ******");    
 }
 
 

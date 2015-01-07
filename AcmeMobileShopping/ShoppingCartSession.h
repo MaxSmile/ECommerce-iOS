@@ -10,10 +10,12 @@
 
 @interface ShoppingCartSession : NSObject
     @property (strong, nonatomic) NSString *sessionId;
+    @property (strong, nonatomic) NSString *routeId;
     @property (strong, nonatomic) NSDate *sessionExpiresOn;
     @property (strong, nonatomic) NSArray *cartItems;
 
     -(id) initWithURLString: (NSString*) path;
     -(BOOL) shouldLogin;
     -(void) login;
+    -(void) logout;
 @end

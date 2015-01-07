@@ -241,6 +241,7 @@
     NSLog(@"Session id to:%@", appDelegate.session.sessionId);
     [request setHTTPMethod:@"DELETE"];
     [request setValue:appDelegate.session.sessionId forHTTPHeaderField:@"JSESSIONID"];
+    [request setValue:appDelegate.session.routeId forHTTPHeaderField:@"ROUTEID"];
     NSURLConnection *theURL = [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:TRUE];
 }
 

@@ -55,12 +55,15 @@
     [prefs setValue:_eumAppKey.text forKey:kAppKey];
     [prefs setValue:_bookstoreTextField.text forKey:kUrl];
     [prefs setValue:_eumUrl.text forKey:kCollectorUrl];
-    //[prefs synchronize];
+    [prefs synchronize];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Saved"
                                                     message:@"Settings Updated"
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
+    [self updateSettings];
+    AppDelegate *appDelegate = (AppDelegate *) [[UIApplication sharedApplication] delegate];
+    [appDelegate relogin];
     [alert show];
         
 }

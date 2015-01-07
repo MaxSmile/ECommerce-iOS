@@ -27,6 +27,7 @@
     NSURL *url = [NSURL URLWithString:checkoutUrl];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     [request setValue:appDelegate.session.sessionId forHTTPHeaderField:@"JSESSIONID"];
+    [request setValue:appDelegate.username forHTTPHeaderField:@"USERNAME"];
     [request setValue:@"true" forHTTPHeaderField:@"appdynamicssnapshotenabled"];
     NSURLResponse *response = nil;
     NSError *error = nil;
