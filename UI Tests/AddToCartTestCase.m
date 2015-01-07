@@ -30,8 +30,7 @@ NSMutableDictionary *map = nil;
     AcmeConfiguration *pmDemo =[[AcmeConfiguration alloc] init];
     
     pmDemo.eumKey = @"pm-cloud-AAB-AUN";
-//    pmDemo.acmeUrl = @"http://ec2-54-90-14-200.compute-1.amazonaws.com/appdynamicspilot/";
-    pmDemo.acmeUrl=@"http://localhost:8000/appdynamicspilot/";
+    pmDemo.acmeUrl = @"http://ec2-54-90-14-200.compute-1.amazonaws.com/appdynamicspilot/";
     pmDemo.collectorUrl = @"http://ec2-54-202-222-83.us-west-2.compute.amazonaws.com";
     pmDemo.username = @"test";
     pmDemo.password = @"appdynamics";
@@ -39,8 +38,7 @@ NSMutableDictionary *map = nil;
     
     AcmeConfiguration *pm2 =[[AcmeConfiguration alloc] init];
     pm2.eumKey = @"pm-cloud-AAB-AUM";
-//    pm2.acmeUrl = @"http://ec2-54-167-95-227.compute-1.amazonaws.com/appdynamicspilot/";
-    pm2.acmeUrl=@"http://localhost:8000/appdynamicspilot/";
+    pm2.acmeUrl = @"http://ec2-54-167-95-227.compute-1.amazonaws.com/appdynamicspilot/";
     pm2.collectorUrl = @"http://ec2-54-202-222-83.us-west-2.compute.amazonaws.com";
     pm2.username = @"test";
     pm2.password = @"appdynamics";
@@ -72,7 +70,7 @@ NSMutableDictionary *map = nil;
         
     
     unsigned int i = 0;
-    unsigned int count = 2 ;
+    unsigned int count = 10 ;
     
     for (i=0; i < count; i++) {
         [tester tapViewWithAccessibilityLabel:@"Best Sellers"];
