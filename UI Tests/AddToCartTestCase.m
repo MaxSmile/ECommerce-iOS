@@ -25,7 +25,7 @@ NSMutableDictionary *map = nil;
 
 - (void)setUp {
     [super setUp];
-    [KIFUITestActor setDefaultTimeout:10];
+    [KIFUITestActor setDefaultTimeout:60];
     map = [NSMutableDictionary dictionary];
     AcmeConfiguration *pmDemo =[[AcmeConfiguration alloc] init];
     
@@ -43,6 +43,34 @@ NSMutableDictionary *map = nil;
     pm2.username = @"test";
     pm2.password = @"appdynamics";
     [map setValue:pm2 forKey:@"pm2"];
+    //demo-AAB-AUY
+    
+    AcmeConfiguration *demo1 =[[AcmeConfiguration alloc] init];
+    demo1.eumKey = @"EUM-AAB-AUN";
+    demo1.acmeUrl = @"http://54.214.13.135:8000/appdynamicspilot/";
+    demo1.collectorUrl = @"http://54.244.124.19";
+    demo1.username = @"test";
+    demo1.password = @"appdynamics";
+    [map setValue:demo1 forKey:@"demo1"];
+    
+    //54.214.16.198
+    AcmeConfiguration *demo2 =[[AcmeConfiguration alloc] init];
+    demo2.eumKey = @"demo-AAB-AUY";
+    demo2.acmeUrl = @"http://54.214.16.198:8000/appdynamicspilot/";
+    demo2.collectorUrl = @"http:/54.71.42.123:9001";
+    demo2.username = @"test";
+    demo2.password = @"appdynamics";
+    [map setValue:demo2 forKey:@"demo2"];
+    
+    //
+    AcmeConfiguration *staging =[[AcmeConfiguration alloc] init];
+    staging.eumKey = @"EUM-AAB-AUA";
+    staging.acmeUrl = @"http://54.203.82.235/appdynamicspilot/";
+    staging.collectorUrl = @"http:/54.71.42.123:9001";
+    staging.username = @"test";
+    staging.password = @"appdynamics";
+    [map setValue:staging forKey:@"staging"];
+    
 }
 
 - (void)tearDown {
@@ -70,7 +98,7 @@ NSMutableDictionary *map = nil;
         
     
     unsigned int i = 0;
-    unsigned int count = 10 ;
+    unsigned int count = 3 ;
     
     for (i=0; i < count; i++) {
         [tester tapViewWithAccessibilityLabel:@"Best Sellers"];
