@@ -18,9 +18,9 @@
 			<key>KeyboardType</key>
 			<string>URL</string>
 			<key>DefaultValue</key>
-			<string>http://ec2-54-167-95-227.compute-1.amazonaws.com/appdynamicspilot/</string>
+			<string>http://ec2-54-90-14-200.compute-1.amazonaws.com/appdynamicspilot/</string>
 			<key>Type</key>
-			<string>PSTextFieldSpecifier</string>
+			<string>URL</string>
 			<key>Title</key>
 			<string>Bookstore URL</string>
 			<key>Key</key>
@@ -84,7 +84,7 @@
 			<key>Key</key>
 			<string>appKey</string>
 			<key>DefaultValue</key>
-			<string>pm-cloud-AAB-AUM</string>
+			<string>pm-cloud-AAB-AUN</string>
 		</dict>
 	</array>
 	<key>StringsTable</key>

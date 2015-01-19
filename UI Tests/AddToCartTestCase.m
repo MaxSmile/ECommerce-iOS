@@ -43,7 +43,6 @@ NSMutableDictionary *map = nil;
     pm2.username = @"test";
     pm2.password = @"appdynamics";
     [map setValue:pm2 forKey:@"pm2"];
-    //demo-AAB-AUY
     
     AcmeConfiguration *demo1 =[[AcmeConfiguration alloc] init];
     demo1.eumKey = @"EUM-AAB-AUN";
@@ -53,7 +52,6 @@ NSMutableDictionary *map = nil;
     demo1.password = @"appdynamics";
     [map setValue:demo1 forKey:@"demo1"];
     
-    //54.214.16.198
     AcmeConfiguration *demo2 =[[AcmeConfiguration alloc] init];
     demo2.eumKey = @"demo-AAB-AUY";
     demo2.acmeUrl = @"http://54.214.16.198:8000/appdynamicspilot/";
@@ -62,14 +60,21 @@ NSMutableDictionary *map = nil;
     demo2.password = @"appdynamics";
     [map setValue:demo2 forKey:@"demo2"];
     
-    //
-    AcmeConfiguration *staging =[[AcmeConfiguration alloc] init];
-    staging.eumKey = @"EUM-AAB-AUA";
-    staging.acmeUrl = @"http://54.203.82.235/appdynamicspilot/";
-    staging.collectorUrl = @"http:/54.71.42.123:9001";
-    staging.username = @"test";
-    staging.password = @"appdynamics";
-    [map setValue:staging forKey:@"staging"];
+    AcmeConfiguration *demo3 =[[AcmeConfiguration alloc] init];
+    demo2.eumKey = @"DEMO-AAB-AUM";
+    demo2.acmeUrl = @"http://54.203.82.235/appdynamicspilot/";
+    demo2.collectorUrl = @"http://54.244.95.83:9001";
+    demo2.username = @"test";
+    demo2.password = @"appdynamics";
+    [map setValue:demo3 forKey:@"demo3"];
+
+//    AcmeConfiguration *staging =[[AcmeConfiguration alloc] init];
+//    staging.eumKey = @"EUM-AAB-AUA";
+//    staging.acmeUrl = @"http://54.203.82.235/appdynamicspilot/";
+//    staging.collectorUrl = @"http:/54.71.42.123:9001";
+//    staging.username = @"test";
+//    staging.password = @"appdynamics";
+//    [map setValue:staging forKey:@"staging"];
     
 }
 
