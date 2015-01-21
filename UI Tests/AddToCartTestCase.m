@@ -68,6 +68,14 @@ NSMutableDictionary *map = nil;
     demo2.password = @"appdynamics";
     [map setValue:demo3 forKey:@"demo3"];
 
+    AcmeConfiguration *demo4 =[[AcmeConfiguration alloc] init];
+    demo2.eumKey = @"DEMO-AAB-AUN";
+    demo2.acmeUrl = @"http://54.71.114.82/appdynamicspilot/";
+    demo2.collectorUrl = @"http://54.244.95.83:9001";
+    demo2.username = @"test";
+    demo2.password = @"appdynamics";
+    [map setValue:demo3 forKey:@"demo4"];
+    
 //    AcmeConfiguration *staging =[[AcmeConfiguration alloc] init];
 //    staging.eumKey = @"EUM-AAB-AUA";
 //    staging.acmeUrl = @"http://54.203.82.235/appdynamicspilot/";
