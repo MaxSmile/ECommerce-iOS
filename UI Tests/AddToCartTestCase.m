@@ -97,17 +97,17 @@ NSMutableDictionary *map = nil;
     
     id key;
     while((key = [enumerator nextObject])) {
-    AcmeConfiguration *config  = [map objectForKey:key];
-        [tester tapViewWithAccessibilityLabel:@"Settings"];
-
-    [tester clearTextFromAndThenEnterText:config.acmeUrl intoViewWithAccessibilityLabel:@"BookstoreUrl"];
-        [tester clearTextFromAndThenEnterText:config.collectorUrl intoViewWithAccessibilityLabel:@"CollectorUrl"];
-    [tester clearTextFromAndThenEnterText:config.username intoViewWithAccessibilityLabel:@"Username"];
-    [tester clearTextFromAndThenEnterText:config.password intoViewWithAccessibilityLabel:@"Password"];
-    [tester clearTextFromAndThenEnterText:config.eumKey intoViewWithAccessibilityLabel:@"Appkey"];
-    [tester tapViewWithAccessibilityLabel:@"return"];
-    [tester tapViewWithAccessibilityLabel:@"Save"];
-    [tester tapViewWithAccessibilityLabel:@"OK"];
+//    AcmeConfiguration *config  = [map objectForKey:key];
+//        [tester tapViewWithAccessibilityLabel:@"Settings"];
+//
+//    [tester clearTextFromAndThenEnterText:config.acmeUrl intoViewWithAccessibilityLabel:@"BookstoreUrl"];
+//        [tester clearTextFromAndThenEnterText:config.collectorUrl intoViewWithAccessibilityLabel:@"CollectorUrl"];
+//    [tester clearTextFromAndThenEnterText:config.username intoViewWithAccessibilityLabel:@"Username"];
+//    [tester clearTextFromAndThenEnterText:config.password intoViewWithAccessibilityLabel:@"Password"];
+//    [tester clearTextFromAndThenEnterText:config.eumKey intoViewWithAccessibilityLabel:@"Appkey"];
+//    [tester tapViewWithAccessibilityLabel:@"return"];
+//    [tester tapViewWithAccessibilityLabel:@"Save"];
+//    [tester tapViewWithAccessibilityLabel:@"OK"];
         
     
     unsigned int i = 0;
