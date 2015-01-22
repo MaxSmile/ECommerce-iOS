@@ -61,20 +61,20 @@ NSMutableDictionary *map = nil;
     [map setValue:demo2 forKey:@"demo2"];
     
     AcmeConfiguration *demo3 =[[AcmeConfiguration alloc] init];
-    demo2.eumKey = @"DEMO-AAB-AUM";
-    demo2.acmeUrl = @"http://54.203.82.235/appdynamicspilot/";
-    demo2.collectorUrl = @"http://54.244.95.83:9001";
-    demo2.username = @"test";
-    demo2.password = @"appdynamics";
+    demo3.eumKey = @"DEMO-AAB-AUM";
+    demo3.acmeUrl = @"http://54.203.82.235/appdynamicspilot/";
+    demo3.collectorUrl = @"http://54.244.95.83:9001";
+    demo3.username = @"test";
+    demo3.password = @"appdynamics";
     [map setValue:demo3 forKey:@"demo3"];
 
     AcmeConfiguration *demo4 =[[AcmeConfiguration alloc] init];
-    demo2.eumKey = @"DEMO-AAB-AUN";
-    demo2.acmeUrl = @"http://54.71.114.82/appdynamicspilot/";
-    demo2.collectorUrl = @"http://54.244.95.83:9001";
-    demo2.username = @"test";
-    demo2.password = @"appdynamics";
-    [map setValue:demo3 forKey:@"demo4"];
+    demo4.eumKey = @"DEMO-AAB-AUN";
+    demo4.acmeUrl = @"http://54.71.114.82/appdynamicspilot/";
+    demo4.collectorUrl = @"http://54.244.95.83:9001";
+    demo4.username = @"test";
+    demo4.password = @"appdynamics";
+    [map setValue:demo4 forKey:@"demo4"];
     
 //    AcmeConfiguration *staging =[[AcmeConfiguration alloc] init];
 //    staging.eumKey = @"EUM-AAB-AUA";
