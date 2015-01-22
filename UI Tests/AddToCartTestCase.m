@@ -27,8 +27,8 @@ NSMutableDictionary *map = nil;
     [super setUp];
     [KIFUITestActor setDefaultTimeout:60];
     map = [NSMutableDictionary dictionary];
+
     AcmeConfiguration *pmDemo =[[AcmeConfiguration alloc] init];
-    
     pmDemo.eumKey = @"pm-cloud-AAB-AUN";
     pmDemo.acmeUrl = @"http://ec2-54-90-14-200.compute-1.amazonaws.com/appdynamicspilot/";
     pmDemo.collectorUrl = @"http://ec2-54-202-222-83.us-west-2.compute.amazonaws.com";
