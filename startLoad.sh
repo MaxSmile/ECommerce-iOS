@@ -1,5 +1,12 @@
 #!/bin/bash
 
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+cd "$DIR"
+
+xcodebuild -project Ecommerce\ Mobile\ Application.xcodeproj -configuration Release
+xcodebuild -project Ecommerce\ Mobile\ Application.xcodeproj -configuration Debug
+
 declare -a combos
 
 combos=(
