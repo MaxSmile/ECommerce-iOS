@@ -18,14 +18,14 @@
 @end
 
 @implementation AddToCartTestCase
-static const NSString *kTitles[] = { @"The Tourist", @"The Lost City Of Z", @"The Goldfinch: A Novel", @"The Godfather", @"Shantaram", @"Sacred Hoops", @"Personal", @"Freakonomics", @"Farewell To Arms",@"Driven From Within",@"A Clockwork Orange"};
+static const NSString *kTitles[] = { @"The Tourist", @"The Lost City Of Z", @"The Godfather", @"Shantaram", @"Sacred Hoops", @"Personal", @"Freakonomics", @"Farewell To Arms",@"Driven From Within",@"A Clockwork Orange"};
 static const int kRandomCrash = 2;
 static const int CRASH_INTERVAL = -1;
 NSMutableDictionary *map = nil;
 
 - (void)setUp {
     [super setUp];
-    [KIFUITestActor setDefaultTimeout:60];
+    [KIFUITestActor setDefaultTimeout:10];
     map = [NSMutableDictionary dictionary];
 
     AcmeConfiguration *pmDemo =[[AcmeConfiguration alloc] init];
