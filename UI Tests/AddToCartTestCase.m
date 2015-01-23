@@ -111,7 +111,7 @@ NSMutableDictionary *map = nil;
         
     
     unsigned int i = 0;
-    unsigned int count = 3 ;
+    unsigned int count = 1;
     
     for (i=0; i < count; i++) {
         [tester tapViewWithAccessibilityLabel:@"Best Sellers"];
