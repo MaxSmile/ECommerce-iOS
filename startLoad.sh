@@ -43,14 +43,14 @@ collectors=(
 
 IFS='%'
 while true; do
-	for d in ${collectors[@]}; do
-		cp "EUMConfig/Root.plist."${d[0]} Settings.bundle/Root.plist
-
-		xcodebuild -project Ecommerce\ Mobile\ Application.xcodeproj -configuration Release
-		xcodebuild -project Ecommerce\ Mobile\ Application.xcodeproj -configuration Debug
-		for i in ${combos[@]}; do
-			echo "Running " "${i[0]}"
+	for i in ${combos[@]}; do
+		echo "Running " "${i[0]}"
+		for d in ${collectors[@]}; do
 			echo "Collector "${d[0]}
+	                cp "EUMConfig/Root.plist."${d[0]} Settings.bundle/Root.plist
+
+	                xcodebuild -project Ecommerce\ Mobile\ Application.xcodeproj -configuration Release
+	                xcodebuild -project Ecommerce\ Mobile\ Application.xcodeproj -configuration Debug
 
 			xcodebuild test -project Ecommerce\ Mobile\ Application.xcodeproj -scheme "AcmeMobileShopping" -destination-timeout 1 -destination ${i[0]}
 		done
