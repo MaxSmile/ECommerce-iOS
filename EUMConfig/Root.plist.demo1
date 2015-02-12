@@ -18,7 +18,7 @@
 			<key>KeyboardType</key>
 			<string>URL</string>
 			<key>DefaultValue</key>
-			<string>http://54.190.107.43/appdynamicspilot/</string>
+			<string>http://ec2-54-190-107-43.us-west-2.compute.amazonaws.com/appdynamicspilot/</string>
 			<key>Type</key>
 			<string>URL</string>
 			<key>Title</key>
