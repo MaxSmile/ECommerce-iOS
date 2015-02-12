@@ -18,7 +18,7 @@
 			<key>KeyboardType</key>
 			<string>URL</string>
 			<key>DefaultValue</key>
-			<string>http://54.214.16.198:8000/appdynamicspilot/</string>
+			<string>http://ec2-54-203-78-38.us-west-2.compute.amazonaws.com/appdynamicspilot/</string>
 			<key>Type</key>
 			<string>URL</string>
 			<key>Title</key>
@@ -72,7 +72,7 @@
 			<key>Key</key>
 			<string>collectorUrl</string>
 			<key>DefaultValue</key>
-			<string>http:/54.71.42.123:9001</string>
+			<string>http://54.244.95.83:9001</string>
 			<key>KeyboardType</key>
 			<string>URL</string>
 		</dict>
@@ -84,7 +84,7 @@
 			<key>Key</key>
 			<string>appKey</string>
 			<key>DefaultValue</key>
-			<string>demo-AAB-AUY</string>
+			<string>DEMO-AAB-AUU</string>
 		</dict>
 	</array>
 	<key>StringsTable</key>
