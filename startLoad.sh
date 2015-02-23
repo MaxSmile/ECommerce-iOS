@@ -38,6 +38,12 @@ collectors=(
 )
 
 IFS='%'
+
+cd Pods/
+xcodebuild -project Pods.xcodeproj -configuration Release
+xcodebuild -project Pods.xcodeproj -configuration Debug
+cd ../
+
 while true; do
 	for i in ${combos[@]}; do
 		echo "Running " "${i[0]}"
