@@ -54,7 +54,7 @@ while true; do
 	                xcodebuild -project Ecommerce\ Mobile\ Application.xcodeproj -configuration Release
 	                xcodebuild -project Ecommerce\ Mobile\ Application.xcodeproj -configuration Debug
 
-			xcodebuild test -project Ecommerce\ Mobile\ Application.xcodeproj -scheme "AcmeMobileShopping" -destination-timeout 1 -destination ${i[0]}
+			xcodebuild test -project Ecommerce\ Mobile\ Application.xcodeproj -scheme "Ecommerce Mobile Application" -destination-timeout 1 -destination ${i[0]}
 		done
 	done
 done
