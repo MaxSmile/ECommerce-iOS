@@ -38,8 +38,6 @@
 		505E45511781C7D100C6C79E /* ShoppingCartSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 505E45501781C7D100C6C79E /* ShoppingCartSession.m */; };
 		5075025C1778F90F00746A59 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5075025B1778F90F00746A59 /* CoreData.framework */; };
 		5075025D1778F9AD00746A59 /* BookListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FE48017788FCE00A31357 /* BookListParser.m */; };
-		5075025E1778F9ED00746A59 /* MasterViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 503FE47417788F4000A31357 /* MasterViewController.h */; };
-		5075025F1778FA0200746A59 /* DetailViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 503FE47B17788F9E00A31357 /* DetailViewController.h */; };
 		507502601778FA0200746A59 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503FE47C17788F9E00A31357 /* DetailViewController.m */; };
 		507502671778FF2F00746A59 /* EcommerceMobileApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 507502651778FF2F00746A59 /* EcommerceMobileApplication.xcdatamodeld */; };
 		507B0E4017D7F8FE00BB5EA5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507B0E3F17D7F8FE00BB5EA5 /* CoreTelephony.framework */; };
@@ -50,7 +48,6 @@
 		50D2FF9217CFDEE10028459B /* CheckoutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D2FF9117CFDEE10028459B /* CheckoutRequest.m */; };
 		50E76091179316E800CC0D65 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E76090179316E800CC0D65 /* Reachability.m */; };
 		50E760931793175D00CC0D65 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E760921793175D00CC0D65 /* SystemConfiguration.framework */; };
-		50E7974819DDE44F00305CAD /* Pods-UI Tests.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 40A67E61F6630D20E969C3DE /* Pods-UI Tests.debug.xcconfig */; };
 		50FB05F9178D263A00749DC5 /* ShoppingCartParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FB05F8178D263A00749DC5 /* ShoppingCartParser.m */; };
 		F7C40C21751397ACAD8EF1D4 /* libPods-UI Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 867670A4BCABCCDF2CA3830B /* libPods-UI Tests.a */; };
 /* End PBXBuildFile section */
@@ -387,14 +384,15 @@
 		503FE43617788EC200A31357 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Adam Leftik";
 				TargetAttributes = {
 					503FE43D17788EC200A31357 = {
-						DevelopmentTeam = CGE964ZX4K;
+						DevelopmentTeam = 2525NH3G3Y;
 					};
 					50BA3DD019DDDEF100A3ADA4 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 2525NH3G3Y;
 						TestTargetID = 503FE43D17788EC200A31357;
 					};
 				};
@@ -443,7 +441,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50E7974819DDE44F00305CAD /* Pods-UI Tests.debug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,9 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5075025F1778FA0200746A59 /* DetailViewController.h in Sources */,
 				507502601778FA0200746A59 /* DetailViewController.m in Sources */,
-				5075025E1778F9ED00746A59 /* MasterViewController.h in Sources */,
 				5075025D1778F9AD00746A59 /* BookListParser.m in Sources */,
 				503FE44E17788EC200A31357 /* main.m in Sources */,
 				503FE45217788EC200A31357 /* AppDelegate.m in Sources */,
@@ -553,15 +548,15 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: AppDynamics Inc. (CGE964ZX4K)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: AppDynamics Inc. (CGE964ZX4K)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mark Prichard (FN5BB466GN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mark Prichard (FN5BB466GN)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"${inhereted}",
+					"${inherited}",
 					"${SRCROOT}",
 				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
-					"${inhereted}",
+					"${inherited}",
 					"${SRCROOT}",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -582,7 +577,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "4ab241d7-c192-4c30-981f-355b1f5e4ebd";
+				PROVISIONING_PROFILE = "e66741f2-c591-426e-932f-a73722d6ef94";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -599,8 +594,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: AppDynamics Inc. (CGE964ZX4K)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: AppDynamics Inc. (CGE964ZX4K)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mark Prichard (FN5BB466GN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mark Prichard (FN5BB466GN)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"${inhereted}",
@@ -621,7 +616,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "4ab241d7-c192-4c30-981f-355b1f5e4ebd";
+				PROVISIONING_PROFILE = "e66741f2-c591-426e-932f-a73722d6ef94";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -632,19 +627,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/aleftik/projects/appdynamics-main/pm-demo-apps/AcmeMobileShopping",
-					"/Users/aleftik/projects/appdynamics-main/pm-demo-apps/AcmeMobileShopping/AcmeMobileShopping",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AcmeMobileShopping/Ecommerce Mobile Application-Prefix.pch";
 				INFOPLIST_FILE = "AcmeMobileShopping/Ecommerce Mobile Application-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -667,19 +660,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"/Users/aleftik/projects/appdynamics-main/pm-demo-apps/AcmeMobileShopping",
-					"/Users/aleftik/projects/appdynamics-main/pm-demo-apps/AcmeMobileShopping/AcmeMobileShopping",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AcmeMobileShopping/Ecommerce Mobile Application-Prefix.pch";
 				INFOPLIST_FILE = "AcmeMobileShopping/Ecommerce Mobile Application-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -707,7 +698,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Adam Leftik (88VUNKTPXM)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -731,7 +723,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4a53a940-225a-42de-ba1a-ad2a659b810e";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ecommerce Mobile Application.app/Ecommerce Mobile Application";
 			};
 			name = Debug;
@@ -747,7 +739,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Adam Leftik (88VUNKTPXM)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -771,7 +764,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4a53a940-225a-42de-ba1a-ad2a659b810e";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ecommerce Mobile Application.app/Ecommerce Mobile Application";
 			};
 			name = Release;
