@@ -8,28 +8,7 @@ declare -a combos
 declare -a collectors
 
 combos=(
-"OS=7.0,name=iPad 2"
-"OS=7.1,name=iPad 2"
-"OS=8.1,name=iPad 2"
-"OS=7.0,name=iPad Air"
-"OS=7.1,name=iPad Air"
-"OS=8.1,name=iPad Air"
-"OS=7.0,name=iPad Retina"
-"OS=7.1,name=iPad Retina"
-"OS=8.1,name=iPad Retina"
-"OS=7.0,name=iPhone 4s"
-"OS=7.1,name=iPhone 4s"
-"OS=8.1,name=iPhone 4s"
-"OS=7.0,name=iPhone 5"
-"OS=7.1,name=iPhone 5"
-"OS=8.1,name=iPhone 5"
-"OS=7.0,name=iPhone 5s"
-"OS=7.1,name=iPhone 5s"
-"OS=8.1,name=iPhone 5s"
-"OS=8.1,name=iPhone 6 Plus"
-"OS=8.1,name=iPhone 6"
-"OS=8.1,name=Resizable iPad"
-"OS=8.1,name=Resizable iPhone"
+"OS=8.2,name=iPhone 6"
 )
 
 collectors=(
@@ -39,16 +18,31 @@ collectors=(
 
 IFS='%'
 
-cd Pods/
-xcodebuild -project Pods.xcodeproj -configuration Release
-xcodebuild -project Pods.xcodeproj -configuration Debug
-cd ../
+#cd Pods/
+#xcodebuild -project Pods.xcodeproj -configuration Release
+#xcodebuild -project Pods.xcodeproj -configuration Debug
+#cd ..
 
 while true; do
 	for i in ${combos[@]}; do
 		echo "Running " "${i[0]}"
 		for d in ${collectors[@]}; do
 			echo "Collector "${d[0]}
+
+			if [[ $string == *"id="* ]]
+			then
+				xcodebuild clean
+				cp "PodsLibs/device/libPods-UI Tests-KIF.a" Pods/build/Debug-iphoneos/
+				cp "PodsLibs/device/libPods-UI Tests.a" Pods/build/Debug-iphoneos/
+				cp "PodsLibs/device/libPods-UI Tests-KIF.a" Pods/build/Release-iphoneos/
+				cp "PodsLibs/device/libPods-UI Tests.a" Pods/build/Release-iphoneos/
+			else
+				xcodebuild clean
+				cp "PodsLibs/simulator/libPods-UI Tests-KIF.a" Pods/build/Debug-iphoneos/
+				cp "PodsLibs/simulator/libPods-UI Tests.a" Pods/build/Debug-iphoneos/
+				cp "PodsLibs/simulator/libPods-UI Tests-KIF.a" Pods/build/Release-iphoneos/
+				cp "PodsLibs/simulator/libPods-UI Tests.a" Pods/build/Release-iphoneos/
+			fi
 	                cp "EUMConfig/Root.plist."${d[0]} Settings.bundle/Root.plist
 
 	                xcodebuild -project Ecommerce\ Mobile\ Application.xcodeproj -configuration Release
