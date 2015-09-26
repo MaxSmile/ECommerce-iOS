@@ -1,5 +1,6 @@
-ADEUMInstrumentation.framework/
+.DS_Store
+ECommerce-Mobile/ADEUMInstrumentation.framework/
 DerivedData/
 build/
-Ecommerce\ Mobile\ Application.xcworkspace/xcuserdata
-Ecommerce\ Mobile\ Application.xcworkspace/xcshareddata
+ECommerce-Mobile.xcworkspace/xcuserdata
+ECommerce-Mobile.xcworkspace/xcshareddata
